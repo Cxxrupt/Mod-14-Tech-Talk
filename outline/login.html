@@ -1,0 +1,76 @@
+<!-- prettier-ignore -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Talk</title>
+    <link rel="stylesheet" href="/css/jass.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-teal-400">
+      <header class="p-2 h-36 bg-amber-800">
+        <div class="ml-6">
+          <nav class="space-x-12 text-slate-800 font-bold">
+            <button class="" id="home">HOME</button>
+            <button class="" id="dashboard">DASHBOARD</button>
+            <button class="no-button" id="login">LOGIN</button>
+            <button class="no-button hidden" id="logout">Logout</button>
+          </nav>
+        </div>
+        <div class="bg-teal-400 w-64 h-12 rounded m-6 shadow-md shadow-slate-300 flex items-center justify-center">
+          <h1 class="text-slate-800 font-bold text-2xl">TECH TALK BLOG</h1>
+      </header>
+      <main class="">
+        <div class="flex justify-center mt-12">
+            <div class="h-fit w-4/5 border-solid border-4 border-amber-800">
+                <div class="flex justify-between items-center bg-amber-800 text-slate-800">
+                    <h2 class="ml-2 text-2xl font-bold">Login</h2>
+                </div>
+                <div class="p-4">
+                    <form action="login.php" method="post">
+                        <div class="mb-4">
+                            <label for="email" class="block font-bold mb-2 text-slate-800">Email</label>
+                            <input
+                                type="text"
+                                placeholder="Enter Email"
+                                name="email"
+                                required
+                                class="w-full border border-gray-300 p-2 rounded-lg"
+                            />
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="block font-bold mb-2 text-slate-800">Password</label>
+                            <input
+                                type="password"
+                                placeholder="Enter Password"
+                                name="password"
+                                required
+                                class="w-full border border-gray-300 p-2 rounded-lg"
+                            />
+                        </div>
+                        <div class="flex justify-between">
+                            <button
+                                type="submit"
+                                class="h-12 bg-amber-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                            >
+                                Login
+                            </button>
+                            <button
+                                type="submit"
+                                class="bg-amber-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                            >
+                                Sign Up
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </main>
+      <footer></footer>
+  </body>
+</html>
